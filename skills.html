@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,9 +30,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+
 
     <!-- NavBar -->
 
@@ -47,11 +49,13 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
-                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page" href="./index.html">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
+                            href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page" href="./about.html">About</a>
+                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
+                            href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark fs-4 fw-bold" href="./skills.html">Skills</a>
@@ -70,6 +74,61 @@
         </div>
     </nav>
 
+    <!-- Skills -->
+
+    <section id="skills" class="container skills-section">
+        <div class="skills-container">
+
+            <!-- Left Side -->
+            <div class="skills-left">
+                <h2>Skills</h2>
+                <h3>
+                    Technologies and tools I use to build modern applications.
+                </h3>
+            </div>
+
+            <!-- Right Side -->
+            <div class="skills-right">
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress">
+                        <div class="progress-bar html"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress">
+                        <div class="progress-bar css"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Bootstrap</span>
+                    <div class="progress">
+                        <div class="progress-bar bootstrap"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div class="progress-bar js"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="progress">
+                        <div class="progress-bar python"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- BackGround -->
 
@@ -78,17 +137,6 @@
             <source src="./Contents/mixkit-bubbles-of-water-rising-to-the-surface-186-full-hd.mp4">
         </video>
     </div>
-
-    <!-- Home -->
-
-   <section id="Home" class="home">
-        <div class="container">
-            <div class="home">
-                <h1 class="name">Albin Varghese</h1>
-                <p class="Developer">Developer</p>
-            </div>
-        </div>
-   </section>
 
     <script>
         const toggleBtn = document.getElementById("theme-toggle");

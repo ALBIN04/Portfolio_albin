@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,9 +30,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+
 
     <!-- NavBar -->
 
@@ -47,11 +49,13 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
-                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page" href="./index.html">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
+                            href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page" href="./about.html">About</a>
+                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
+                            href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark fs-4 fw-bold" href="./skills.html">Skills</a>
@@ -70,6 +74,55 @@
         </div>
     </nav>
 
+    <!-- Projects -->
+
+    <section id="projects" class="container projects-section">
+        <div class="projects-container">
+
+            <div class="projects-heading">
+                <h2>Projects</h2>
+                <p>Some projects I've built while learning and exploring development.</p>
+            </div>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A responsive personal portfolio showcasing my skills,
+                        projects, and experience using HTML, CSS, Bootstrap,
+                        and JavaScript.
+                    </p>
+                    <button class="btn">View Project</button>
+                </div>
+
+                <div class="project-card">
+                    <h3>To-Do List App</h3>
+                    <p>
+                        A task management application built using HTML, CSS,
+                        and JavaScript. Users can add, complete, and delete
+                        tasks through an interactive interface.
+                    </p>
+                    <button class="btn" onclick="window.open('https://albin04.github.io/to_DO/', '_blank')">
+                        View Project
+                    </button>
+                </div>
+
+                <div class="project-card">
+                    <h3>Responsive Website</h3>
+                    <p>
+                        A modern responsive website designed with Bootstrap
+                        and custom CSS, optimized for desktop, tablet, and
+                        mobile devices.
+                    </p>
+                    <button class="btn" onclick="window.open('https://albin04.github.io/mtest2/', '_blank')">
+                        View Project
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- BackGround -->
 
@@ -78,17 +131,6 @@
             <source src="./Contents/mixkit-bubbles-of-water-rising-to-the-surface-186-full-hd.mp4">
         </video>
     </div>
-
-    <!-- Home -->
-
-   <section id="Home" class="home">
-        <div class="container">
-            <div class="home">
-                <h1 class="name">Albin Varghese</h1>
-                <p class="Developer">Developer</p>
-            </div>
-        </div>
-   </section>
 
     <script>
         const toggleBtn = document.getElementById("theme-toggle");
