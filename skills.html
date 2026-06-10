@@ -38,7 +38,7 @@
 
     <!-- NavBar -->
 
-    <nav class="navbar navbar-expand-lg  mt-5 rounded-pill px-4 py-2 glass-navbar"
+   <nav class="navbar navbar-expand-lg  mt-3 rounded-pill px-4 py-2 glass-navbar"
         style="background: rgba(79, 77, 77, 0.2); backdrop-filter: blur(10px);">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,21 +50,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
-                            href="./index.html">Home</a>
+                        <a class="nav-link active  fs-4 fw-bold" href="./index.html">
+                            <i class="fa-solid fa-house"></i> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
+                        <a class="nav-link active  fs-4 fw-bold" aria-current="page"
                             href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fs-4 fw-bold" href="./skills.html">Skills</a>
+                        <a class="nav-link  fs-4 fw-bold" href="./skills.html">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fs-4 fw-bold" href="./projects.html">Projects</a>
+                        <a class="nav-link fs-4 fw-bold" href="./projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fs-4 fw-bold" href="./contact.html">Contact</a>
+                        <a class="nav-link fs-4 fw-bold" href="./contact.html">Contact</a>
                     </li>
                     <button id="theme-toggle" class="theme-btn">
                         <i class="fa-solid fa-moon"></i>
@@ -79,77 +79,161 @@
     <section id="skills" class="container skills-section">
         <div class="skills-container">
 
-            <!-- Left Side -->
-            <div class="skills-left">
-                <h2>Skills</h2>
-                <h3>
-                    Technologies and tools I use to build modern applications.
-                </h3>
+           <div class="skills-left">
+
+    <h2>Skills</h2>
+    <h3>Technologies I use to build modern applications.</h3>
+
+  <div class="circle-grid">
+
+    <div class="circle-card">
+        <div class="circle html-circle">
+            <div class="outer">
+                <div class="inner">90%</div>
             </div>
+        </div>
+        <span>HTML</span>
+    </div>
+
+    <div class="circle-card">
+        <div class="circle css-circle">
+            <div class="outer">
+                <div class="inner">85%</div>
+            </div>
+        </div>
+        <span>CSS</span>
+    </div>
+
+    <div class="circle-card">
+        <div class="circle js-circle">
+            <div class="outer">
+                <div class="inner">80%</div>
+            </div>
+        </div>
+        <span>JavaScript</span>
+    </div>
+
+    <div class="circle-card">
+        <div class="circle python-circle">
+            <div class="outer">
+                <div class="inner">75%</div>
+            </div>
+        </div>
+        <span>Python</span>
+    </div>
+
+</div>
+
+</div>
 
             <!-- Right Side -->
-            <div class="skills-right">
+            <!-- Right Side -->
+<div class="skills-right">
 
-                <div class="skill">
-                    <span>HTML</span>
-                    <div class="progress">
-                        <div class="progress-bar html"></div>
-                    </div>
-                </div>
+    <div class="skills-grid">
 
-                <div class="skill">
-                    <span>CSS</span>
-                    <div class="progress">
-                        <div class="progress-bar css"></div>
-                    </div>
-                </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <h4>Frontend</h4>
+            <p>HTML • CSS • JavaScript • Bootstrap</p>
+        </div>
 
-                <div class="skill">
-                    <span>Bootstrap</span>
-                    <div class="progress">
-                        <div class="progress-bar bootstrap"></div>
-                    </div>
-                </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-server"></i>
+            <h4>Backend</h4>
+            <p>Node.js • Express • REST APIs</p>
+        </div>
 
-                <div class="skill">
-                    <span>JavaScript</span>
-                    <div class="progress">
-                        <div class="progress-bar js"></div>
-                    </div>
-                </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <h4>Databases</h4>
+            <p>MongoDB • MySQL</p>
+        </div>
 
-                <div class="skill">
-                    <span>Python</span>
-                    <div class="progress">
-                        <div class="progress-bar python"></div>
-                    </div>
-                </div>
+        <div class="skill-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4>Tools</h4>
+            <p>Git • GitHub • VS Code</p>
+        </div>
 
-            </div>
+    </div>
+
+</div>
+
 
         </div>
+
+        </div>
+
+        <div class="soft-skills">
+            <span class="soft-skill">Problem Solving</span>
+            <span class="soft-skill">Teamwork</span>
+            <span class="soft-skill">Adaptability</span>
+            <span class="soft-skill">Communication</span>
+            <span class="soft-skill">Quick Learning</span>
+        </div>
+
     </section>
+
 
     <!-- BackGround -->
 
-    <div class="container">
-        <video autoplay muted loop playsinline class="bg-video">
-            <source src="./Contents/mixkit-bubbles-of-water-rising-to-the-surface-186-full-hd.mp4">
-        </video>
-    </div>
+    <!-- Light Mode Video -->
+
+    <video autoplay muted loop playsinline class="bg-video light-video">
+        <source src="./Contents/mixkit-bubbles-of-water-rising-to-the-surface-186-full-hd.mp4">
+    </video>
+
+    <!-- Dark Mode Video -->
+
+    <video autoplay muted loop playsinline class="bg-video dark-video">
+        <source src="./Contents/vecteezy_abstract-black-and-white-particle-waving-texture-with_29460830.mp4"
+            type="video/mp4">
+    </video>
 
     <script>
         const toggleBtn = document.getElementById("theme-toggle");
         const icon = toggleBtn.querySelector("i");
+
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+            icon.classList.replace("fa-moon", "fa-sun");
+        }
 
         toggleBtn.addEventListener("click", () => {
             document.body.classList.toggle("light-mode");
 
             if (document.body.classList.contains("light-mode")) {
                 icon.classList.replace("fa-moon", "fa-sun");
+                localStorage.setItem("theme", "light");
             } else {
                 icon.classList.replace("fa-sun", "fa-moon");
+                localStorage.setItem("theme", "dark");
             }
+        });
+
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach(counter => {
+            const target = +counter.getAttribute("data-target");
+            let count = 0;
+
+            const updateCounter = () => {
+                const increment = Math.ceil(target / 50);
+
+                if (count < target) {
+                    count += increment;
+
+                    if (count > target) {
+                        count = target;
+                    }
+
+                    counter.innerText = count;
+                    requestAnimationFrame(updateCounter);
+                }
+            };
+
+            updateCounter();
         });
     </script>
 

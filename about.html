@@ -38,7 +38,7 @@
 
     <!-- NavBar -->
 
-    <nav class="navbar navbar-expand-lg  mt-5 rounded-pill px-4 py-2 glass-navbar"
+   <nav class="navbar navbar-expand-lg  mt-3 rounded-pill px-4 py-2 glass-navbar"
         style="background: rgba(79, 77, 77, 0.2); backdrop-filter: blur(10px);">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,21 +50,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
-                            href="./index.html">Home</a>
+                        <a class="nav-link active  fs-4 fw-bold" href="./index.html">
+                            <i class="fa-solid fa-house"></i> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark fs-4 fw-bold" aria-current="page"
+                        <a class="nav-link active  fs-4 fw-bold" aria-current="page"
                             href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fs-4 fw-bold" href="./skills.html">Skills</a>
+                        <a class="nav-link  fs-4 fw-bold" href="./skills.html">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fs-4 fw-bold" href="./projects.html">Projects</a>
+                        <a class="nav-link fs-4 fw-bold" href="./projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark fs-4 fw-bold" href="./contact.html">Contact</a>
+                        <a class="nav-link fs-4 fw-bold" href="./contact.html">Contact</a>
                     </li>
                     <button id="theme-toggle" class="theme-btn">
                         <i class="fa-solid fa-moon"></i>
@@ -75,6 +75,7 @@
     </nav>
 
 
+
     <!-- About -->
 
     <section id="about" class="container about-section">
@@ -83,7 +84,7 @@
             <!-- Left Side -->
             <div class="about-left">
                 <h2 class="abt">About Me</h2>
-
+                <img src="./Contents/WhatsApp Image 2026-03-23 at 8.36.39 PM.jpeg" alt="Profile">
                 <h3>
                     Building modern digital experiences through code and creativity.
                 </h3>
@@ -108,23 +109,37 @@
 
     <!-- BackGround -->
 
-    <div class="container">
-        <video autoplay muted loop playsinline class="bg-video">
-            <source src="./Contents/mixkit-bubbles-of-water-rising-to-the-surface-186-full-hd.mp4">
-        </video>
-    </div>
+    <!-- Light Mode Video -->
 
-    <script>
+    <video autoplay muted loop playsinline class="bg-video light-video">
+        <source src="./Contents/mixkit-bubbles-of-water-rising-to-the-surface-186-full-hd.mp4">
+    </video>
+
+    <!-- Dark Mode Video -->
+
+    <video autoplay muted loop playsinline class="bg-video dark-video">
+        <source src="./Contents/vecteezy_abstract-black-and-white-particle-waving-texture-with_29460830.mp4"
+            type="video/mp4">
+    </video>
+
+     <script>
         const toggleBtn = document.getElementById("theme-toggle");
         const icon = toggleBtn.querySelector("i");
+
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+            icon.classList.replace("fa-moon", "fa-sun");
+        }
 
         toggleBtn.addEventListener("click", () => {
             document.body.classList.toggle("light-mode");
 
             if (document.body.classList.contains("light-mode")) {
                 icon.classList.replace("fa-moon", "fa-sun");
+                localStorage.setItem("theme", "light");
             } else {
                 icon.classList.replace("fa-sun", "fa-moon");
+                localStorage.setItem("theme", "dark");
             }
         });
     </script>
